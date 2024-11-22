@@ -1,0 +1,191 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 13 de nov. de 2024, 13:37:12
+    Author     : maria_gessner
+*/
+
+* Reset de estilo básico *
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+
+
+/* Corpo da página */
+body {
+    font-family: 'Courier', monospace;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    color: #333; /* Cor de texto escuro para contraste */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Cor escura para o cabeçalho */
+    color: #ff66b2; /* Rosa claro para o texto do cabeçalho */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff66b2; /* Rosa claro para os links */
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff3385; /* Rosa mais forte ao passar o mouse */
+}
+
+/* Seção sobre a empresa */
+section#sobre {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+section#sobre h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section#sobre p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Lista de valores */
+section#sobre ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+section#sobre ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+section#sobre ul li strong {
+    color: #ff66b2;
+}
+
+/* Seção de contato */
+section#contato {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+section#contato h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section#contato p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 80%;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff66b2; /* Cor de borda ao focar */
+}
+
+form button {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff3385; /* Rosa mais escuro no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #ff66b2;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}

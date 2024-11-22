@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West - Contato</title>
+    <link rel="stylesheet" href="empresa.css">
+</head>
+<body>
+
+<header>
+    <h1>West</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Se você tiver dúvidas ou quiser saber mais sobre nossos produtos, sinta-se à vontade em compartilhar com agente!</p>
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="button" id="sendButton">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 West. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.getElementById('sendButton').addEventListener('click', function() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const telefone = document.getElementById('telefone').value;
+        const endereco = document.getElementById('endereco').value;
+        const message = document.getElementById('message').value;
+
+        const text = `Olá, meu nome é ${name}.
+E-mail: ${email}
+Telefone: ${telefone}
+Endereço: ${endereco}
+Mensagem: ${message}`;
+
+        const whatsappURL = `https://wa.me/8963365412?text=${encodeURIComponent(text)}`;
+
+        window.open(whatsappURL, '_blank');
+    });
+</script>
+
+</body>
+</html>
